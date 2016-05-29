@@ -1,0 +1,14 @@
+<title>204 AJAX test</title>
+<body>
+    <p>Client request to Server which responds with 204 and NO CONTENT in body
+        but wrong Content-length: 2 header
+    </p>
+    <p>Expected: 204 MUST NOT have content and request finishes despite wrong 
+        Content-Length. Works like this in Firefox. Edge seems to wait forever
+        and runs into set timeout
+    </p>
+    <button id="go">Request from API</button>
+    <pre id="out">loading</pre>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
